@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IPost } from '../IPost';
 
 @Component({
   selector: 'app-social-posts',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SocialPostsComponent implements OnInit {
 
+  postList: IPost[];
+
   constructor() { }
+
+  onSubmit() { }
+
+  onDelete() { }
 
   ngOnInit() {
   }
