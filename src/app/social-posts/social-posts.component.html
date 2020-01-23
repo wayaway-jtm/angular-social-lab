@@ -1,1 +1,7 @@
-<p>social-posts works!</p>
+<app-post-form (submitted)="onSubmit($event)" *ngIf="showForm"></app-post-form>
+<button (click)="showNewThoughtForm()">New Thought</button>
+<ul>
+    <li *ngFor="let singlePost of postList">
+        <app-post [post]="singlePost" (deleted)="onDelete($event)"></app-post>
+    </li>
+</ul>

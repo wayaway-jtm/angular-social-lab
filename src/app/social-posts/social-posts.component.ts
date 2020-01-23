@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IPost } from '../IPost';
+import { PostComponent } from '../post/post.component';
+import { IPost } from '../ipost'
 
 @Component({
   selector: 'app-social-posts',
@@ -8,13 +9,23 @@ import { IPost } from '../IPost';
 })
 export class SocialPostsComponent implements OnInit {
 
-  postList: IPost[];
+  showForm: boolean = false;
+  postList: PostComponent[];
 
   constructor() { }
 
-  onSubmit() { }
+  onSubmit(eventVar: IPost) {
+    this.postList = [...this.postList, new PostComponent(eventVar.title, eventVar.thought)]
+    this.showForm = false;
+  }
 
-  onDelete() { }
+  onDelete(eventVar) {
+
+  }
+
+  showNewThoughtForm() {
+    this.showForm = true;
+  }
 
   ngOnInit() {
   }
