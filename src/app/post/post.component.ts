@@ -16,6 +16,8 @@ export class PostComponent implements OnInit, IPost {
   }
 
   ngOnInit() {
+    this.title = this.post.title;
+    this.thought = this.post.thought;
   }
 
   deletePost() {

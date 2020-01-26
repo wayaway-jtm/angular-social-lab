@@ -11,14 +11,12 @@ import { Post } from '../post/post.class';
 export class SocialPostsComponent implements OnInit {
 
   showForm: boolean = false;
-  postList: IPost[] = [];
+  postList: IPost[] = [new Post()];
 
   constructor() { }
 
   onSubmit(eventVar: IPost) {
-    console.log('Received thought: ', new Post(eventVar.title, eventVar.thought));
     this.postList = [...this.postList, new Post(eventVar.title, eventVar.thought)];
-    console.log('Array: ', this.postList);
     this.showForm = false;
   }
 

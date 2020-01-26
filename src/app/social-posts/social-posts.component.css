@@ -1,0 +1,5 @@
+li {
+    max-width: 50vw;
+    border-bottom: 1px solid lightgray;
+    list-style-type: none;
+}
