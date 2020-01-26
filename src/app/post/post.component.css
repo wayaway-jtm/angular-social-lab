@@ -8,11 +8,12 @@ span section {
 
 p {
     margin: 0;
-    font-family: 'Dosis', 'sans-serif';
+    font-family: 'Dosis', sans-serif;
 }
 
 #pTitle {
     font-weight: bold;
+    font-size: 2rem;
 }
 
 button {
