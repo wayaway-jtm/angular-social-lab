@@ -1,9 +1,11 @@
-<form>
+<form #f="ngForm">
   <div>
-    <input type="text" [(ngModel)]="titleInput"/>
+    <input type="text" [(ngModel)]="titleInput" name="inpTitle" />
   </div>
   <div>
-    <textarea [(ngModel)]="txtThought" name="txtThought" id="txtThought" cols="30" rows="10"></textarea>
-    <button (click)="submitPost()"></button>
+    <textarea [(ngModel)]="txtThought" name="txtThought" id="txtThought" cols="30"
+      rows="10"></textarea>
   </div>
 </form>
+<button (click)="submitPost($event)">Submit</button>
+<p *ngIf="submitTest">Submitted</p>
