@@ -6,3 +6,13 @@
 h1 {
     font-family: 'Homemade Apple', cursive;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+app-root {
+    width: 60vw;
+}
