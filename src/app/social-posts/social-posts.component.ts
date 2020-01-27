@@ -20,7 +20,8 @@ export class SocialPostsComponent implements OnInit {
   }
 
   onDelete(eventVar) {
-
+    console.log(this.postList.indexOf(eventVar));
+    this.postList = this.postList.splice(this.postList.indexOf(eventVar), 1);
   }
 
   showNewThoughtForm() {

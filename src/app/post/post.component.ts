@@ -10,7 +10,7 @@ export class PostComponent implements OnInit, IPost {
   title: string = '';
   thought: string = '';
   @Input() post: IPost;
-  @Output() deleted? = new EventEmitter<IPost>();
+  @Output() deleted? = new EventEmitter<PostComponent>();
 
   constructor() {
   }
@@ -21,7 +21,8 @@ export class PostComponent implements OnInit, IPost {
   }
 
   deletePost() {
-    this.deleted.emit({title: this.title, thought: this.thought});
+    // this.deleted.emit({title: this.title, thought: this.thought});
+    this.deleted.emit(this);
   }
 
 }
