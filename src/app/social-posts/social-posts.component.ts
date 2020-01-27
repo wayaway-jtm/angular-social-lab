@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PostComponent } from '../post/post.component';
 import { IPost } from '../ipost'
 import { Post } from '../post/post.class';
 

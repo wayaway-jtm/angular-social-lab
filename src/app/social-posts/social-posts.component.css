@@ -1,3 +1,8 @@
+ul {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
 li {
     max-width: 50vw;
     border-bottom: 1px solid lightgray;

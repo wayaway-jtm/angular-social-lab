@@ -1,11 +1,19 @@
-<form #f="ngForm">
-  <div>
-    <input type="text" [(ngModel)]="titleInput" name="inpTitle" />
-  </div>
-  <div>
-    <textarea [(ngModel)]="txtThought" name="txtThought" id="txtThought" cols="30"
-      rows="10"></textarea>
-  </div>
-</form>
-<button (click)="submitPost($event)">Submit</button>
-<p *ngIf="submitTest">Submitted</p>
+<div class="bg-focus">
+  <section>
+    <form #f="ngForm">
+      <div>
+        <label>
+          <p>Title</p>
+          <input type="text" [(ngModel)]="titleInput" name="inpTitle" />
+        </label>
+      </div>
+      <div>
+        <label>
+          <p>Thought</p>
+          <textarea [(ngModel)]="txtThought" name="txtThought" id="txtThought" cols="30" rows="10"></textarea>
+        </label>
+      </div>
+      <button (click)="submitPost($event)">Add Post</button>
+    </form>
+  </section>
+</div>

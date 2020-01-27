@@ -1,0 +1,42 @@
+section {
+  background-color: #B1DDEA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30vw;
+  margin: auto;
+  margin-top: 20vh;
+}
+
+form {
+    padding: 25px;
+    width: 100%;
+}
+
+input, section, button, textarea {
+    border-radius: 5px;
+}
+
+input, textarea, button {
+    border: 1px solid black;
+    width: 100%;
+    padding: 5px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+button {
+    margin: 5px 0;
+}
+
+
+.bg-focus {
+  background: rgba(0, 0, 0, .75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
