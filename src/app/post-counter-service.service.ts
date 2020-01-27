@@ -13,8 +13,11 @@ export class PostCounterService {
     return this.postCount;
   }
 
+  getAndIncrement() {
+    return this.postCount++;
+  }
+
   increment() {
     this.postCount++;
-    console.log('Post count: ', this.postCount);
   }
 }

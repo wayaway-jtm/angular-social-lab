@@ -20,7 +20,6 @@ input, section, button, textarea {
 input, textarea, button {
     border: 1px solid black;
     width: 100%;
-    padding: 5px;
 }
 
 p {
@@ -28,7 +27,7 @@ p {
 }
 
 button {
-    margin: 5px 0;
+    padding: 5px;
 }
 
 

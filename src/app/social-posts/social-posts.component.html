@@ -2,6 +2,6 @@
 <button (click)="showNewThoughtForm()">New Thought</button>
 <ul>
   <li *ngFor="let singlePost of postList; index as i">
-    <app-post [post]="singlePost" (deleted)="onDelete($event)"></app-post>
+    <app-post [post]="singlePost" [id]="i" (deleted)="onDelete($event)"></app-post>
   </li>
 </ul>
