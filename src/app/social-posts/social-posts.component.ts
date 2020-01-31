@@ -7,7 +7,7 @@ import { PostCounterService } from '../post-counter-service.service'
   selector: 'app-social-posts',
   templateUrl: './social-posts.component.html',
   styleUrls: ['./social-posts.component.css'],
-  providers: [ PostCounterService ]
+  providers: [PostCounterService]
 })
 export class SocialPostsComponent implements OnInit {
 
@@ -21,7 +21,9 @@ export class SocialPostsComponent implements OnInit {
   constructor(private counter: PostCounterService) { }
 
   onSubmit(eventVar: IPost) {
-    this.postList = [...this.postList, new Post(this.counter.getAndIncrement(), eventVar.title, eventVar.thought)];
+    if (!(eventVar.title == '' || eventVar.thought == '')) {
+      this.postList = [...this.postList, new Post(this.counter.getAndIncrement(), eventVar.title, eventVar.thought)];
+    }
     this.showForm = false;
   }
 
