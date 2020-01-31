@@ -15,6 +15,7 @@ form {
 
 input, section, button, textarea {
     border-radius: 5px;
+    padding: 5px;
 }
 
 input, textarea, button {
